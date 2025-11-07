@@ -10,7 +10,6 @@ import java.util.InputMismatchException;
 public class Main
 {
 	public static void main(String[] args) {
-
 		Scanner scanner = new Scanner(System.in);
 		Random random = new Random();
 		char repetition;
@@ -66,12 +65,10 @@ public class Main
 							}
 						}
 					}
-
 				} else {
 					System.out.println("[Wrong guess!]\n");
 					wrongAnswer++;
 				}
-
 
 				if (!character.contains('_')) {
 					System.out.println("The word is...");
@@ -81,7 +78,7 @@ public class Main
 					System.out.println("\n[Congratulations] You won!");
 					break;
 				}
-
+				
 				if (wrongAnswer >= 6) {
 					getHangman(wrongAnswer);
 					System.out.println("Game Over!");
