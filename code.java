@@ -29,7 +29,6 @@ public class Main
 
 		do {
 			ArrayList<Character> character = new ArrayList<>();
-			ArrayList<Character> guessedCharacter = new ArrayList<>();
 			int wrongAnswer = 0;
 			repetition = ' ';
 			String correctWord = possibleAnswer.get(random.nextInt(possibleAnswer.size()));
@@ -52,7 +51,6 @@ public class Main
 
 				System.out.print("Enter a letter: ");
 				char guess = scanner.next().toUpperCase().charAt(0);
-				guessedCharacter.add(guess);
 
 				if (correctWord.indexOf(guess) >= 0) {
 					if (character.contains(guess)) {
